@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./asset/img/favicon-software.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/index.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <title>Landkit I</title>
+</head>
+<body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg header__navbar">
+        <div class="container-fluid header__navbar-container">
+          <a class="navbar-brand navbar-brand-color" href="#"><img src="./asset/img/brand.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__navbar-list">
+              <li class="nav-item header-item">
+                <a class="nav-link header__navbar-link" aria-current="page" href="#">Landings</a>
+                <div class="header__landing-content">
+                  <div class="header__landing-img">
+                    <h4>Want to see an overview?</h4>
+                    <p>See all the pages at once</p>
+                    <a href="#" class="btn btn-outline-primary">View all pages</a>
+                  </div>
+                  <div class="header__landing-list">
+                    <div class="col-6 header__landing-list-left">
+                      <div style="margin-bottom: 15px;">
+                        <h4 class="header__landing-list-heading">Services</h4>
+                        <ul class="header__landing-list-item">
+                          <li class="header__landing-item"><a href="#">Coworking</a></li>
+                          <li class="header__landing-item"><a href="#">Rental</a></li>
+                          <li class="header__landing-item"><a href="#">Job Listing</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 class="header__landing-list-heading">Apps</h4>
+                        <ul class="header__landing-list-item">
+                          <li class="header__landing-item"><a href="#">Desktop</a></li>
+                          <li class="header__landing-item"><a href="#">Mobile</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-6 header__landing-list-right">
+                      <h4 class="header__landing-list-heading">Web</h4>
+                      <ul class="header__landing-list-item">
+                        <li class="header__landing-item"><a href="#">Basic</a></li>
+                        <li class="header__landing-item"><a href="#">Startup</a></li>
+                        <li class="header__landing-item"><a href="#">Enterprise</a></li>
+                        <li class="header__landing-item"><a href="#">Service</a></li>
+                        <li class="header__landing-item"><a href="#">Cloud Hosting</a></li>
+                        <li class="header__landing-item"><a href="#">Agency</a></li>
+                        <li class="header__landing-item"><a href="#">Framework (<span>New</span>)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item header-item">
+                <a class="nav-link header__navbar-link" aria-current="page" href="#">Pages</a>
+                <div class="header__pages-content">
+                  <div class="col-3 header__pages-col">
+                    <div style="margin-bottom: 15px;">
+                      <h4 class="header__landing-list-heading">Career</h4>
+                      <ul class="header__landing-list-item">
+                        <li class="header__landing-item"><a href="#">Listing</a></li>
+                        <li class="header__landing-item"><a href="#">Opening</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 class="header__landing-list-heading">Company</h4>
+                      <ul class="header__landing-list-item">
+                        <li class="header__landing-item"><a href="#">About</a></li>
+                        <li class="header__landing-item"><a href="#">Pricing</a></li>
+                        <li class="header__landing-item"><a href="#">Terms</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-3 header__pages-col">
+                    <div style="margin-bottom: 15px;">
+                      <h4 class="header__landing-list-heading">Help center</h4>
+                      <ul class="header__landing-list-item">
+                        <li class="header__landing-item"><a href="#">Overview</a></li>
+                        <li class="header__landing-item"><a href="#">Article</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 class="header__landing-list-heading">Contact</h4>
+                      <ul class="header__landing-list-item">
+                        <li class="header__landing-item"><a href="#">Basic</a></li>
+                        <li class="header__landing-item"><a href="#">Cover</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-3 header__pages-col">
+                    <h4 class="header__landing-list-heading">Blog</h4>
+                    <ul class="header__landing-list-item">
+                      <li class="header__landing-item"><a href="#">Rich View</a></li>
+                      <li class="header__landing-item"><a href="#">Article</a></li>
+                      <li class="header__landing-item"><a href="#">Showcase</a></li>
+                      <li class="header__landing-item"><a href="#">Search</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 header__pages-col">
+                    <h4 class="header__landing-list-heading">Portfolio</h4>
+                    <ul class="header__landing-list-item">
+                      <li class="header__landing-item"><a href="#">Masonry</a></li>
+                      <li class="header__landing-item"><a href="#">Grid Rows</a></li>
+                      <li class="header__landing-item"><a href="#">Parallax</a></li>
+                      <li class="header__landing-item"><a href="#">Case Study</a></li>
+                      <li class="header__landing-item"><a href="#">Sidebar</a></li>
+                      <li class="header__landing-item"><a href="#">Sidebar: Fluid</a></li>
+                      <li class="header__landing-item"><a href="#">Basic Grid</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item header-item">
+                <a class="nav-link header__navbar-link" aria-current="page" href="#">Account</a>
+                <ul class="header__navbar-account">
+                  <li class="header__navbar-item">
+                    <a class="header__navbar-item-link" href="#">
+                      Settings 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                    <ul class="header__navbar-dropdown">
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">General</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Security</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Notifications</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Plans & Payment</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Users</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__navbar-item">
+                    <a class="header__navbar-item-link" href="#">
+                      Sign In 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                    <ul class="header__navbar-dropdown">
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Side Cover</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Illustration</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Basic</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Modal Horizontal</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Modal Vertical</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__navbar-item">
+                    <a class="header__navbar-item-link" href="#">
+                      Sign Up 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                    <ul class="header__navbar-dropdown">
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Side Cover</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Illustration</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Basic</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Modal Horizontal</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Modal Vertical</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__navbar-item">
+                    <a class="header__navbar-item-link" href="#">
+                      Password Reset 
+                      <svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                    <ul class="header__navbar-dropdown">
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Side Cover</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Illustration</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Basic</a>
+                      </li>
+                     
+                    </ul>
+                  </li>
+                  <li class="header__navbar-item">
+                    <a class="header__navbar-item-link" href="#">
+                      Error 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                    <ul class="header__navbar-dropdown">
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Side Cover</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Illustration</a>
+                      </li>
+                      <li class="header__navbar-dropdown-item">
+                        <a href="#" class="header__navbar-item-link">Basic</a>
+                      </li>
+                     
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item header-item">
+                <a class="nav-link header__navbar-link" aria-current="page" href="#">Documentation</a>
+                <div class="header__navbar-doc">
+                  <a href="#" class="header__navbar-doc-item">
+                    <div class="header__navbar-doc-img">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M8 3v.5A1.5 1.5 0 009.5 5h5A1.5 1.5 0 0016 3.5V3h2a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h2z" fill="#335EEA" opacity=".3"></path><path d="M11 2a1 1 0 012 0h1.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11z" fill="#335EEA"></path><rect fill="#335EEA" opacity=".3" x="7" y="10" width="5" height="2" rx="1"></rect><rect fill="#335EEA" opacity=".3" x="7" y="14" width="9" height="2" rx="1"></rect></g></svg>
+                    </div>
+                    <div class="header__navbar-doc-content">
+                      <h6 class="header__navbar-doc-heading">Documentation</h5>
+                      <p>Customizing and building</p>
+                    </div>
+                  </a>
+                  
+                  <a href="#" class="header__navbar-doc-item">
+                    <div class="header__navbar-doc-img">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><rect fill="#335EEA" x="4" y="4" width="7" height="7" rx="1.5"></rect><path d="M5.5 13h4a1.5 1.5 0 011.5 1.5v4A1.5 1.5 0 019.5 20h-4A1.5 1.5 0 014 18.5v-4A1.5 1.5 0 015.5 13zm9-9h4A1.5 1.5 0 0120 5.5v4a1.5 1.5 0 01-1.5 1.5h-4A1.5 1.5 0 0113 9.5v-4A1.5 1.5 0 0114.5 4zm0 9h4a1.5 1.5 0 011.5 1.5v4a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-4a1.5 1.5 0 011.5-1.5z" fill="#335EEA" opacity=".3"></path></g></svg></div>
+                    <div class="header__navbar-doc-content">
+                      <h6 class="header__navbar-doc-heading">Components</h5>
+                      <p>Full list of component</p>
+                    </div>
+                  </a>
+                  <a href="#" class="header__navbar-doc-item">
+                    <div class="header__navbar-doc-img">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M5.857 2h7.88a1.5 1.5 0 01.968.355l4.764 4.029A1.5 1.5 0 0120 7.529v12.554c0 1.79-.02 1.917-1.857 1.917H5.857C4.02 22 4 21.874 4 20.083V3.917C4 2.127 4.02 2 5.857 2z" fill="#335EEA" opacity=".3"></path><rect fill="#335EEA" x="6" y="11" width="9" height="2" rx="1"></rect><rect fill="#335EEA" x="6" y="15" width="5" height="2" rx="1"></rect></g></svg></div>
+                    <div class="header__navbar-doc-content">
+                      <h6 class="header__navbar-doc-heading">Changelog</h5>
+                      <p>Keep track of changes</p>
+                      
+                    </div>
+                    <span>1.2.2</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <button class="btn btn-buy-now" type="submit">Buy now</button>
+          </div>
+        </div>
+        <div id="navbarSupportedContent">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Landings
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="col-6 header__landing-list-left">
+                    <div style="margin-bottom: 15px;">
+                      <h4 class="header__landing-list-heading">Services</h4>
+                      <ul class="header__landing-list-item">
+                        <li class="header__landing-item"><a href="#">Coworking</a></li>
+                        <li class="header__landing-item"><a href="#">Rental</a></li>
+                        <li class="header__landing-item"><a href="#">Job Listing</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 class="header__landing-list-heading">Apps</h4>
+                      <ul class="header__landing-list-item">
+                        <li class="header__landing-item"><a href="#">Desktop</a></li>
+                        <li class="header__landing-item"><a href="#">Mobile</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6 header__landing-list-right">
+                    <h4 class="header__landing-list-heading">Web</h4>
+                    <ul class="header__landing-list-item">
+                      <li class="header__landing-item"><a href="#">Basic</a></li>
+                      <li class="header__landing-item"><a href="#">Startup</a></li>
+                      <li class="header__landing-item"><a href="#">Enterprise</a></li>
+                      <li class="header__landing-item"><a href="#">Service</a></li>
+                      <li class="header__landing-item"><a href="#">Cloud Hosting</a></li>
+                      <li class="header__landing-item"><a href="#">Agency</a></li>
+                      <li class="header__landing-item"><a href="#">Framework (<span>New</span>)</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Pages
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="col-6 col-md-3 header__pages-col">
+                      <div style="margin-bottom: 15px;">
+                        <h4 class="header__landing-list-heading">Career</h4>
+                        <ul class="header__landing-list-item">
+                          <li class="header__landing-item"><a href="#">Listing</a></li>
+                          <li class="header__landing-item"><a href="#">Opening</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 class="header__landing-list-heading">Company</h4>
+                        <ul class="header__landing-list-item">
+                          <li class="header__landing-item"><a href="#">About</a></li>
+                          <li class="header__landing-item"><a href="#">Pricing</a></li>
+                          <li class="header__landing-item"><a href="#">Terms</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 header__pages-col">
+                      <div style="margin-bottom: 15px;">
+                        <h4 class="header__landing-list-heading">Help center</h4>
+                        <ul class="header__landing-list-item">
+                          <li class="header__landing-item"><a href="#">Overview</a></li>
+                          <li class="header__landing-item"><a href="#">Article</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 class="header__landing-list-heading">Contact</h4>
+                        <ul class="header__landing-list-item">
+                          <li class="header__landing-item"><a href="#">Basic</a></li>
+                          <li class="header__landing-item"><a href="#">Cover</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 header__pages-col">
+                      <h4 class="header__landing-list-heading">Blog</h4>
+                      <ul class="header__landing-list-item">
+                        <li class="header__landing-item"><a href="#">Rich View</a></li>
+                        <li class="header__landing-item"><a href="#">Article</a></li>
+                        <li class="header__landing-item"><a href="#">Showcase</a></li>
+                        <li class="header__landing-item"><a href="#">Search</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md-3 header__pages-col">
+                      <h4 class="header__landing-list-heading">Portfolio</h4>
+                      <ul class="header__landing-list-item">
+                        <li class="header__landing-item"><a href="#">Masonry</a></li>
+                        <li class="header__landing-item"><a href="#">Grid Rows</a></li>
+                        <li class="header__landing-item"><a href="#">Parallax</a></li>
+                        <li class="header__landing-item"><a href="#">Case Study</a></li>
+                        <li class="header__landing-item"><a href="#">Sidebar</a></li>
+                        <li class="header__landing-item"><a href="#">Sidebar: Fluid</a></li>
+                        <li class="header__landing-item"><a href="#">Basic Grid</a></li>
+                      </ul>
+                    </div>
+                  
+                </div>
+              </div>
+            </div><div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Account
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <!-- submenu -->
+  
+                  <div class="accordion accordion-flush" id="accordionFlushExample-mini">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                          Settings
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample-mini">
+                        <div class="accordion-body">
+                          <ul>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">General</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Security</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Notifications</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Plans & Payment</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Users</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                          Sign In
+                        </button>
+                      </h2>
+                      <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample-mini">
+                        <div class="accordion-body">
+                          <ul>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">General</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Security</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Notifications</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Plans & Payment</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Users</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                          Sign Up
+                        </button>
+                      </h2>
+                      <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample-mini">
+                        <div class="accordion-body">
+                          <ul>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">General</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Security</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Notifications</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Plans & Payment</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Users</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                          Password Reset
+                        </button>
+                      </h2>
+                      <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample-mini">
+                        <div class="accordion-body">
+                          <ul>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">General</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Security</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Notifications</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Plans & Payment</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Users</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingNine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                          Error
+                        </button>
+                      </h2>
+                      <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample-mini">
+                        <div class="accordion-body">
+                          <ul>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">General</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Security</a>
+                            </li>
+                            <li class="header__navbar-dropdown-item">
+                              <a href="#" class="header__navbar-item-link">Notifications</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+  
+                  <!-- endsubmenu -->
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" style="border: 1px solid rgba(0,0,0,.125);" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Documentation
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a href="#" class="header__navbar-doc-item">
+                    <div class="header__navbar-doc-img">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M8 3v.5A1.5 1.5 0 009.5 5h5A1.5 1.5 0 0016 3.5V3h2a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h2z" fill="#335EEA" opacity=".3"></path><path d="M11 2a1 1 0 012 0h1.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11z" fill="#335EEA"></path><rect fill="#335EEA" opacity=".3" x="7" y="10" width="5" height="2" rx="1"></rect><rect fill="#335EEA" opacity=".3" x="7" y="14" width="9" height="2" rx="1"></rect></g></svg>
+                    </div>
+                    <div class="header__navbar-doc-content">
+                      <h6 class="header__navbar-doc-heading">Documentation</h5>
+                      <p>Customizing and building</p>
+                    </div>
+                  </a>
+                  
+                  <a href="#" class="header__navbar-doc-item">
+                    <div class="header__navbar-doc-img">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><rect fill="#335EEA" x="4" y="4" width="7" height="7" rx="1.5"></rect><path d="M5.5 13h4a1.5 1.5 0 011.5 1.5v4A1.5 1.5 0 019.5 20h-4A1.5 1.5 0 014 18.5v-4A1.5 1.5 0 015.5 13zm9-9h4A1.5 1.5 0 0120 5.5v4a1.5 1.5 0 01-1.5 1.5h-4A1.5 1.5 0 0113 9.5v-4A1.5 1.5 0 0114.5 4zm0 9h4a1.5 1.5 0 011.5 1.5v4a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-4a1.5 1.5 0 011.5-1.5z" fill="#335EEA" opacity=".3"></path></g></svg></div>
+                    <div class="header__navbar-doc-content">
+                      <h6 class="header__navbar-doc-heading">Components</h5>
+                      <p>Full list of component</p>
+                    </div>
+                  </a>
+                  <a href="#" class="header__navbar-doc-item">
+                    <div class="header__navbar-doc-img">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M5.857 2h7.88a1.5 1.5 0 01.968.355l4.764 4.029A1.5 1.5 0 0120 7.529v12.554c0 1.79-.02 1.917-1.857 1.917H5.857C4.02 22 4 21.874 4 20.083V3.917C4 2.127 4.02 2 5.857 2z" fill="#335EEA" opacity=".3"></path><rect fill="#335EEA" x="6" y="11" width="9" height="2" rx="1"></rect><rect fill="#335EEA" x="6" y="15" width="5" height="2" rx="1"></rect></g></svg></div>
+                    <div class="header__navbar-doc-content">
+                      <h6 class="header__navbar-doc-heading">Changelog</h5>
+                      <p>Keep track of changes</p>
+                      
+                    </div>
+                    <span>1.2.2</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main style="padding: 86px 20px 0;">
+      <div class="main container">
+        <div class="row main__container">
+          <div class="col-6 main__container-img">
+            
+            <div class="device-combo ">
+              
+              <div class="device-combo-img">
+                <img src="./asset/img/home.jpg" class="device-screen" alt="...">
+                <img src="./asset/img/iphonex.svg" class="img-fluid" alt="..." >
+              </div>
+  
+              <div class="device-combo-img-big" data-aos="fade-left" data-aos-delay="150">
+                <img src="./asset/img/rental.jpg" class="device-screen" alt="...">
+                <img src="./asset/img/iphonex.svg" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 main__container-chat" >
+            
+            <h1 class="main__container-chat-heading">
+              Chat with <span class="text-primary">friends.</span> <br>
+              Anywhere in the world.
+            </h1>
+            
+            <p>
+              Keep in touch with your friends and family with free international chats, calls, and even games. Landkit connects you with the world.
+            </p>
+            <div class="main__container-chat-btn">
+                <div class="main__container-chat-input-wrap">
+                    <input type="url" class="main__container-chat-input">
+                </div>
+                <div class="main__container-chat-btn-link-wrap">
+                    <button type="submit" class="btn btn-primary main__container-chat-btn-link">
+                      Text link
+                    </button>
+                </div>
+            </div>
+  
+          </div>
+        </div>
+        <div class="row main_container-characteristic">
+          <div class="col-6 main_container-characteristic-img">
+            <img src="./asset/img/photo-23.jpg" alt="" class="img1">
+            <img src="./asset/img/photo-22.jpg" alt="" class="img2">
+            <img src="./asset/img/photo-25.jpg" alt="" class="img3">
+            <img src="./asset/img/photo-24.jpg" alt="" class="img4">
+          </div>
+          <div class="col-6 main_container-characteristic-content" >
+            <h1 class="main__container-chat-heading-small">
+              Show your friends and family where you've been.
+            </h1>
+            <p class="p-content">
+              Staying connected while traveling can be tough, but Landkit makes it easy by automatically sharing your experiences.
+            </p>
+            <div class="main__container-chat-btn">
+                <button type="submit" class="btn btn-primary main__container-chat-btn-link">
+                  Learn more
+                </button>
+            </div>
+          </div>
+  
+        </div>
+        <div class="main-container-footer row">
+          
+          <div class="col-6 col-lg-5 main-container-footer-content" >
+            <h1 class="main__container-chat-heading-small">
+              Use your phone number so your're easy to find.
+            </h1>    
+            <p class="p-content">
+              Landkit uses your phone number for your account instead of an email or username so you're super easy to find for all your friends.
+            </p>
+          </div>
+          <div class="col-6 col-lg-7 main__container-img">
+            <img src="./asset/img/mobile-chat.png" alt="" class="img-chat">
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="position-relative main-background-footer">
+        <div class="shape shape-top shape-fluid-x svg-shim text-white main-background-footer-shape">
+            <svg viewBox="720 0 1400 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2880 0H0v54.112h720s289.42 40.248 705 0c416.5-37.733 735 0 735 0h720V0z" fill="currentColor"></path></svg>
+        </div>
+    </div>
+    <div class="backgroundvideo">
+      <a href="#" class="btn btn-outline-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+          <path d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+        </svg>
+        WATCH VIDEO
+      </a>
+    </div>
+    <div class="container container-dowload">
+      <div class="dowload-title">
+        <h5>Get the app now!</h5>
+        <p class="p-content p-footer">Travel and share width ease.</p>
+      </div>
+      <div class="dowload-img">
+        <a href="#"><img src="./asset/img/button-app.png" alt="" class="app-img"></a>
+        <a href="#"><img src="./asset/img/button-play.png" alt="" class="app-img"></a>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container-footer container">
+        <div class=" col-12 col-lg-3 col-md-4 col-xs-12">
+          <img src="./asset/img/brand.svg" alt="" class="footer-logo">
+          <p>A better way to build.</p>
+          <ul class="footer-list-icon">
+            <li class="footer-list-item">
+              <a href="#">
+              <img src="./asset/img/instagram.svg" alt="instagram">
+            </a>
+          </li>
+            <li class="footer-list-item">
+              <a href="#">
+              <img src="./asset/img/facebook.svg" alt="facebook">
+              </a>
+          </li>
+            <li class="footer-list-item">
+              <a href="#">
+                <img src="./asset/img/twitter.svg" alt="twitter">
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">
+                <img src="./asset/img/pinterest.svg" alt="pinterest">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 col-md-4 col-xs-12">
+          <div class="footer-list">
+            <h4 class="footer-list-heading">Products</h4>
+            <ul class="header__landing-list-item">
+              <li><a href="#" class="p-content p-footer footer-list-link">Page Builder</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">UI Kit</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">Styleguide</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">Documentation</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">Changelog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-4 col-xs-12">
+          <div class="footer-list">
+            <h4 class="footer-list-heading">Services</h4>
+            <ul class="header__landing-list-item">
+              <li><a href="#" class="p-content p-footer footer-list-link">Documentation</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">Changelog</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">Page Builder</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">UI Kit</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-4 col-xs-12 ml-4" >
+          <div class="footer-list">
+            <h4 class="footer-list-heading">Connect</h4>
+            <ul class="header__landing-list-item">
+              <li><a href="#" class="p-content p-footer footer-list-link">Page Builder</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">UI Kit</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">Styleguide</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">Documentation</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">Changelog</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">Documentation</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">Changelog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-4 col-xs-12">
+          <div class="footer-list">
+            <h4 class="footer-list-heading">Legal</h4>
+            <ul class="header__landing-list-item">
+              <li><a href="#" class="p-content p-footer footer-list-link">Documentation</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">Changelog</a></li>
+              <li><a href="#" class="p-content p-footer footer-list-link">Page Builder</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
